@@ -85,8 +85,8 @@ body {
 
   .switch {
     display: flex;
-      justify-content: space-between;
-      margin-top: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
   }
 
   .switch button {
@@ -162,7 +162,7 @@ flex-shrink: 0;
 font-size: 12px;
 font-style: normal;
 font-weight: 500;
-line-height: 117.5%; /* 14.1px */
+line-height: 117.5%;
 letter-spacing: -0.24px;
 }
 .weekend {
