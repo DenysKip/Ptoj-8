@@ -1,9 +1,14 @@
+.container {
+  
+  margin: 32px;
+  padding: 32px;
+}
 body { 
     font-family: sans-serif;
     margin: 0; 
     padding: 0; 
     background: #f4f4f4; 
-    /**}
+    }
     .section {
         padding: 20px;
     }
@@ -105,7 +110,6 @@ body {
         background: #6e57e0;
       }
   
-      /* Promo */
       .promo-container {
         position: relative;
         text-align: center;
@@ -295,3 +299,48 @@ body {
         border-radius: 16px;
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
       }
+     
+.top-dishes {
+  text-align: center;
+}
+.top-dishes-our {
+  color: #7b61ff;
+}
+.top-restourants {
+  text-align: center;
+}
+.top-restourants-our {
+  color: #7b61ff;
+}
+.card {
+  list-style: none;
+}
+.text-purchases {
+  text-align: center;
+}
+.title-purchases {
+  color: #7b61ff;
+}
+
+.title-footer {
+  list-style: none;
+}
+.text-wrapper-footer {
+  padding: 23px;
+  list-style: none;
+}
+.questions {
+  list-style: none;
+}
+.image-footer {
+  gap: 30px;
+  justify-content: center;
+  display: flex;
+}
+.frequently-asked {
+  justify-content: center;
+  text-align: center;
+}
+.questions-1 {
+  color: #7b61ff;
+}
