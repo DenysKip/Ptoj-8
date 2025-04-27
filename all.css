@@ -37,6 +37,46 @@ line-height: 54px;
       color: white;
       list-style: none;
     }
+
+
+
+    .top-dishes {
+      text-align: center;
+    }
+    .top-dishes-our {
+      color: #7b61ff;
+    }
+    .top-restourants {
+      text-align: center;
+    }
+    .top-restourants-our {
+      color: #7b61ff;
+    }
+    .label-healthy {
+      width: 38.524px;
+    height: 14.525px;
+    flex-shrink: 0;
+      border-radius: 3.158px;
+    background: #F7EDD0;
+    }
+    .label-healthy.Healthy {
+    }
+    .label-trending {
+      border-radius: 3.158px;
+    background: #F7C5BA;
+    }
+    .label-trending.Trending {
+    }
+    .label-supreme {
+      border-radius: 3.158px;
+    opacity: 0.2;
+    background: #33AC64;
+    }
+    .label-supreme.Supreme {
+    }
+    .card {
+      list-style: none;
+    }
     .text-quality {
       text-align: center;
     }
@@ -247,13 +287,6 @@ background: #6C5FBC;
         background: white;
         border: 5px solid white;
       }
-      body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 20px;
-        background: #f8f8f8;
-        color: #333;
-      }
   
       .section {
         margin-bottom: 40px;
@@ -370,21 +403,7 @@ background: #6C5FBC;
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
       }
      
-.top-dishes {
-  text-align: center;
-}
-.top-dishes-our {
-  color: #7b61ff;
-}
-.top-restourants {
-  text-align: center;
-}
-.top-restourants-our {
-  color: #7b61ff;
-}
-.card {
-  list-style: none;
-}
+
 .text-purchases {
   text-align: center;
 }
@@ -396,16 +415,44 @@ background: #6C5FBC;
   list-style: none;
 }
 .text-wrapper-footer {
+  color: #323142;
+  font-size: 12.301px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31.119px; 
   padding: 23px;
   list-style: none;
+}
+.bg-label {
+  width: 315px;
+height: 0.556px;
+background: #ADADAD;
 }
 .questions {
   list-style: none;
 }
 .image-footer {
+  background: transparent;
+  left: 111px;
   gap: 30px;
   justify-content: center;
   display: flex;
+}
+.footer-title {
+  width: 375px;
+height: 426px;
+flex-shrink: 0;
+background: #EFEFEF;;
+}
+.title-footer {
+  padding: 30px;
+  color: #606060;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 18.884px; /* 134.887% */
+text-transform: uppercase;
 }
 .frequently-asked {
   justify-content: center;
@@ -414,8 +461,59 @@ background: #6C5FBC;
 .questions-1 {
   color: #7b61ff;
 }
-.category-pizza {
-  fill: #FFDE8A;
-opacity: 0.35;
-filter: drop-shadow(0px 12.33px 18.495px rgba(135, 125, 200, 0.25));
+.label-footer {
+  width: 314px;
+height: 1px;
+background: #CBCBCB;
+}
+.text-label {
+  text-align: center;
+  color: #70798B;
+font-family: Inter;
+font-size: 13.541px;
+font-style: normal;
+font-weight: 500;
+line-height: 19.914px; /* 147.059% */
+}
+
+
+
+
+.pizza {
+  color: #D69900;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 9.864px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.asian {
+  color: #FB471D;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 10.996px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.donat{
+  color: #E28B14;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 9.864px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.ice {
+  color: #002073;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 9.864px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.title-price {
 }
