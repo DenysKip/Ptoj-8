@@ -11,6 +11,14 @@ body {
     .section {
         padding: 20px;
     }
+.nav-text {
+  list-style: none;
+  display: flex;
+}
+.menu-btn-header {
+  list-style: none;
+  display: flex;
+}
     .list {
       list-style: none;
     }
@@ -412,7 +420,11 @@ background: #6C5FBC;
 }
 
 .title-footer {
+ padding: 30px;
   list-style: none;
+}
+.title-footer-list {
+  margin: 30px;
 }
 .text-wrapper-footer {
   color: #323142;
@@ -432,11 +444,12 @@ background: #ADADAD;
   list-style: none;
 }
 .image-footer {
-  background: transparent;
-  left: 111px;
+  border: transparent;
   gap: 30px;
   justify-content: center;
   display: flex;
+}
+.footer-image {
 }
 .footer-title {
   width: 375px;
@@ -478,10 +491,12 @@ line-height: 19.914px; /* 147.059% */
 
 
 
-
+.category-pizza {
+  background-color: ;
+}
 .pizza {
   color: #D69900;
-  text-align: center;
+
   font-family: Poppins;
   font-size: 9.864px;
   font-style: normal;
@@ -490,7 +505,6 @@ line-height: 19.914px; /* 147.059% */
 }
 .asian {
   color: #FB471D;
-  text-align: center;
   font-family: Poppins;
   font-size: 10.996px;
   font-style: normal;
@@ -499,7 +513,6 @@ line-height: 19.914px; /* 147.059% */
 }
 .donat{
   color: #E28B14;
-  text-align: center;
   font-family: Poppins;
   font-size: 9.864px;
   font-style: normal;
@@ -508,12 +521,17 @@ line-height: 19.914px; /* 147.059% */
 }
 .ice {
   color: #002073;
-  text-align: center;
   font-family: Poppins;
   font-size: 9.864px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
+.categories {
+  list-style: none;
+}
 .title-price {
+}
+.price-range {
+  display: flex;
 }
