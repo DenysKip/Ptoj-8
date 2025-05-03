@@ -10,11 +10,13 @@
 <body>
     <header class="header">
         <div class="container">
+          <div class="header-logo-text">
           <picture>
             <Img src="Img/Logo.avif" alt="Logo">
         </picture>
         <h2 class="text-logo">eatly</h2>
       </div>
+        </div>
         <ul class="nav-text">
             <nav class="nav">
             <li class="menu-text"><a href="">Menu</a></li>
@@ -41,30 +43,36 @@
             <p>1000 users</p>
             </div>
             <div>
-                <h1 class="herotitle"><span>Enjoy Foods 
-                    Over The</span><span>World</span>
+                <h1 class="hero-title"><span>Enjoy Foods Over The </span><span class="world"> World</span>
                 </h1>
-                <p>EatLy help you set saving goals, earn cash back offers, Go
+                <p class="hero-p-text">EatLy help you set saving goals, earn cash back offers, Go
                    to disclaimer for more details and get paychecks up to two
-                   days early. Get a <span>$20 bonus.</span></p>
+                   days early. Get a <span class="bonus">$20 bonus.</span></p>
             </div>
-            <div>
-              <button>Get Started</button>
-              <button>Go Pro</button>
-          </div>
-           <picture>
-            <source>
+            <ul class="hero-btn">
+              <li>
+              <button class="get-started"><span class="text-get-started">Get Started</span></button>
+              </li>
+              <li>
+              <button class="go-pro"><span>Go Pro</span></button>
+              </li>
+            </ul>
+           <ul class="image-hero">
+            <li class="image-hero-list">
             <img src="Img/trustpilot-1 1 (1).png" alt="">
+            </li>
+            <li class="image-hero-list">
             <img src="img/Hero.avif" alt="">
-           </source>
-           </picture>
+          </li>
+           </ul>
         </div> 
        
              <img class="star" src="img/Star.avif" alt="star">
          </div>
-         <div>
-            <img src="img/Food.png">
+         <div class="container">
+            <img class="food-hero" src="img/Food.png">
          </div>
+         <div class="container">
         <ul class="bg">
           <li class="list">
              <h2 class="text-bg">10k+</h2>
@@ -82,21 +90,24 @@
                 We Provide Great Experiences</p>      
                 </li>
             </ul>
-    <div>
-      <section class="">
+         </div>
+      <section class="present">
+        <div class="container">
         <h2 class="text-quality"><span>Premium</span> <span class="quality"> Quality</span>
             <span>For Your Health</span></h2>
-        <ul>
+        <ul class="text-list">
             <li class="list-title">Premium quality food is made with ingredients that are packed with essential vitamins, minerals.</li>
             <li class="list-title">These foods promote overall wellness by support healthy digestion and boosting immunity</li>
         </ul>
-        <div>
-            <button class="btn-download">Download</button>
-            <img src="Img/Vector 14.png">
-            <img src="Img/arrow-right.svg">
+        <div class="download-btn">
+            <button class="btn-download">Download
+              <img class="image-btn" src="Img/arrow-right.svg">
+            </button>
+            <img class="img-download" src="Img/Vector 14.png">
         </div>    
     <img class="quality-img" src="img/Mobile.png" alt="Mobile">
         </div>
+      </div>
           </main>
         </section>
         <section class="our-top">
@@ -184,7 +195,7 @@
                     </li>
                   </ul>
                     <div>
-                        <button class="view-all" >View All</button>
+                        <button class="view-all">View All</button>
                       </div>
                 </div>
               </div>
@@ -215,7 +226,7 @@
                 </div>
             
                 <div class="card order">
-                  <div class="order-details">
+                  <div class="container">
                     <img src="Img/Food Image (10).png" alt="Fish Hell Veg" />
                     <div class="order-text">
                       <p><strong>Fish Hell Veg</strong></p>
@@ -230,19 +241,19 @@
                   <h2>Purchases</h2>
                   <p>This month</p>
             
-                  <div style="margin-top: 20px;">
+                  <div class="container">
                     <p><span>Expense</span><br><small>Increased By 10%</small></p>
                     <p><span>$409.00</span></p>
                     <div class="purchase-bar purple-bar"></div>
                   </div>
             
-                  <div style="margin-top: 20px;">
+                  <div>
                     <p><span>Voucher Usage</span><br><small>Increased By 5%</small></p>
                     <p><span>$45.78</span></p>
                     <div class="purchase-bar yellow-bar"></div>
                   </div>
                 </div>
-                <div class="testimonial-container">
+                <div class="container">
                     <h2><span class="purple">Customer</span> Say</h2>
                     <div class="card">
                       <div class="profile">
@@ -273,15 +284,14 @@
                       <img src="Img/Food Image (4).png" alt="Food Dish" />
                     </div>
                   </div>
-                  <script>
-                  </script>
+                  </div>
     </main>
 </section>
 
 <section class="category">
 <div class="container">
     <h1 class="banner">
-      <span class="title">50% OFF</span>
+      <span class="banner-title">50% OFF</span>
       <span class="weekend">WEEKEND</span>
       <img class="banner-img" src="Food Image (3).png" alt="Dish">
     </h1>
@@ -315,7 +325,7 @@
     </ul>
 <button class="apply-btn">Apply</button> 
     </div>
-    <section class="button-search">
+    <div class="container">
         <div class="search">
             <img src="Search (2).svg" alt="Search">
             <div class="text-search">Search</div>
@@ -324,6 +334,7 @@
             <button>Food</button>
             <button class="active">Restaurant</button>
         </div>
+      </div>
     </section>
 
 
@@ -423,7 +434,6 @@
             <div>
             <img class="footer-image" src="Img/Socials.svg" alt="Socials">
             </div>
-          </div>
             <div class="footer-title">
               <ul class="title-footer">
             <li class="title-footer-list">Blog</li>
@@ -437,6 +447,7 @@
             </div>
             </div>
         </div>
+      </div>
         </section>
     <script src="./index.js"></script>
       </body>
