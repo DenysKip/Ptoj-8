@@ -5,8 +5,8 @@
   box-sizing: border-box;
 }
 .container {
-  border: 1px solid red;
-  padding:  32px;
+  border: 2px solid red;
+  margin: 2px;
 }
 body { 
   text-decoration: none;
@@ -14,16 +14,18 @@ body {
     margin: 0; 
     padding: 0; 
     background: #f4f4f4; 
-    }
+}
     .text-logo {
-
       margin: 10px;
       color: #6C5FBC;
 font-family: Poppins;
 font-size: 21.176px;
 font-style: normal;
 font-weight: 600;
-line-height: 130%; /* 27.529px */
+line-height: 130%;
+    }
+.text-users {
+      text-align: center;
     }
 .nav-text {
   justify-content: space-around;
@@ -40,7 +42,22 @@ line-height: 130%; /* 27.529px */
 }
 .image-hero {
   list-style: none;
+  justify-content: right;
   display: flex;
+  gap: 30px;
+}
+.image-hero-list-trust {
+}
+.image-hero-list-star-img {
+  display: flex;
+  margin-left: 180px;
+}
+.img-hero {
+  display: flex;
+  justify-content: right;
+}
+.star-title {
+margin-bottom: 10px;
 }
 .food-hero {
   text-align: center;
@@ -79,7 +96,7 @@ font-weight: 500;
 line-height: 17.263px;
 }
 .hero-btn {
-  text-align: center;
+  margin-left: 70px;
 list-style: none;
 display: flex;
 padding: 15px;
@@ -93,6 +110,7 @@ background: #6C5FBC;
 border: transparent;
 }
 .go-pro {
+  margin-left: 15px;
   width: 88.073px;
 height: 47.239px;
 flex-shrink: 0;
@@ -109,10 +127,22 @@ border: 2px solid #6C5FBC;
   letter-spacing: 0.13px;
   text-transform: capitalize;
 }
+.text-go-pro {
+  color: #6C5FBC;
+font-family: Poppins;
+font-size: 13.027px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.13px;
+text-transform: capitalize;
+}
     .list {
+
       list-style: none;
     }
     .title-bg {
+      margin-bottom: 110px;
       color: #C5BFED;
       text-align: center;
       font-family: Inter;
@@ -122,6 +152,8 @@ border: 2px solid #6C5FBC;
       line-height: 21.6px; /* 150% */
     }
     .bg{
+      width: 375px;
+      height: ;
       background: #6C5FBC;
     }
     .text-bg {
@@ -134,11 +166,26 @@ border: 2px solid #6C5FBC;
       font-weight: 700;
       line-height: 54px; /* 125% */
     }
+    .promo-card {
+      width: 315px;
+      height: 256.974px;
+      flex-shrink: 0;
+    }
     .text-list {
       padding: 67px 0px 67px;
     }
 .quality-img {
   margin: 102px 102px;
+}
+.purchase-card {
+  
+}
+.customer-say{
+  margin-top: 185px;
+  text-align: center;
+}
+.submit {
+
 }
 .img-download {
   position: absolute;
