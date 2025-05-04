@@ -441,10 +441,16 @@ stroke: #ACADB9;
   .purple {
     color: #6e57e0;
   }
+  .title-purchases {
+    color:  #6C5FBC;
+  }
   .purchase-bar {
     height: 8px;
     border-radius: 4px;
     margin-top: 6px;
+  }
+  .via {
+    text-align: center;
   }
       .promo-card {
         background: #6e57e0;
