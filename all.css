@@ -328,16 +328,9 @@ background: #33AC64;
       stroke-width: 2.258px;
 stroke: #ACADB9;
     }
-    .card {
-      list-style: none;
-    }
+    
     .card-p { 
-      width: 146.928px;
-height: 255.331px;
-flex-shrink: 0;border-radius: 22.619px;
-border: 0.942px solid var(--Colors-Gray-Gray-2, #F4F4F6);
-background: var(--Pure-White, #FFF);
-box-shadow: 4.479px 53.754px 26.877px 0px rgba(229, 229, 229, 0.70);
+      list-style: none;
       background: white;
       border-radius: 12px;
       padding: 10px;
@@ -348,7 +341,8 @@ box-shadow: 4.479px 53.754px 26.877px 0px rgba(229, 229, 229, 0.70);
       }
       .view-all {
         border: transparent;
-      }/
+      }
+      
 
 
 
