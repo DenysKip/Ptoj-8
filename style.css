@@ -191,8 +191,12 @@ text-transform: capitalize;
     .image-btn {
       text-align: center;
     }
-    .text-quality {
+    .title-quality {
+      margin-top: 67px;
       text-align: center;
+    }
+    .h-quality {
+      display: block;
     }
     .quality {
       color: #7b61ff;
@@ -230,6 +234,7 @@ background: #6C5FBC;
       color: #7b61ff;
     }
     .top-restourants {
+      margin-top: 150px;
       color: #323142;
       text-align: center;
       font-feature-settings: 'liga' off, 'clig' off;
@@ -240,6 +245,7 @@ background: #6C5FBC;
       line-height: 120%;
     }
     .top-restourants-our {
+      display: block;
       color: #6C5FBC;
       font-feature-settings: 'liga' off, 'clig' off;
       font-family: Poppins;
@@ -248,8 +254,16 @@ background: #6C5FBC;
       font-weight: 600;
       line-height: 120%;
     }
+    .card-rest {
+      margin-top: 60px;
+    }
+    .span-dishes {
+      color: #6C5FBC;
+      display: block;
+      margin-bottom: 61px;
+    }
     .h-dish {
-      margin-top: 250px;
+      margin-top: 260px;
       color: #323142;
 text-align: center;
 font-feature-settings: 'liga' off, 'clig' off;
@@ -440,8 +454,16 @@ stroke: #ACADB9;
   .purple {
     color: #6e57e0;
   }
+  .text-purchases {
+    margin-top: 258px;
+    text-align: center;
+  }
   .title-purchases {
     color:  #6C5FBC;
+  }
+  .span-via {
+    margin-bottom: 27px;
+    display: block;
   }
   .purchase-bar {
     height: 8px;
@@ -576,7 +598,27 @@ stroke: #ACADB9;
     text-align: center;
     color: white;
   }
-
+  .say {
+    display: block;
+    margin-bottom: 55px;
+  }
+  .purple {
+    color: #6C5FBC;
+font-feature-settings: 'liga' off, 'clig' off;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%;
+  }
+.purchase-text {
+  color: var(--Greyscale-500, #A0AEC0);
+font-family: Manrope;
+font-size: 9.304px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+letter-spacing: 0.372px;
+}
   .subscribe input {
     padding: 10px;
     border: none;
@@ -603,31 +645,23 @@ stroke: #ACADB9;
     font-style: italic;
   }
   .purchase-card {
+    margin-top: 100px;
     padding: 20px;
     background: #fff;
     border-radius: 16px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   }
-  .text-purchases {
-    text-align: center;
+  .list-this {
+    list-style: none;
   }
-  .title-purchases {
-    color: #7b61ff;
-  }
-  .progress-bar {
-    width: 100%;
-    height: 4px;
-    background: #eee;
-    margin-top: 20px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .progress {
     width: 20%;
     height: 100%;
     background: #6e57e0;
+  }
+  .this-title {
+    list-style: none;
+    display: flex;
   }
 
 
