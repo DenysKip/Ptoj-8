@@ -325,6 +325,9 @@ flex-shrink: 0;
     .card img { 
         border-radius: 12px; 
     }
+    .purple-star {
+      color: #6C5FBC;
+    }
     .view-all {
       border: transparent;
       background-color: white;
