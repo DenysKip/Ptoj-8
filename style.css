@@ -312,6 +312,28 @@ flex-shrink: 0;
       font-weight: 400;
       line-height: normal;
     }
+    .card { 
+      display: flex;
+      flex-wrap: wrap;
+      width: calc((100%-20%)/2);
+        background: rgb(218, 218, 218);
+        border-radius: 12px;
+        padding: 10px;
+        margin-bottom: 16px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+      }
+    .card img { 
+        border-radius: 12px; 
+    }
+    .view-all {
+      border: transparent;
+      background-color: white;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
     .label-supreme {
       width: 42.107px;
 height: 10.334px;
@@ -363,6 +385,7 @@ stroke: #ACADB9;
 
 
     .card { 
+      width: calc((100%-20%)/2);
         background: rgb(218, 218, 218);
         border-radius: 12px;
         padding: 10px;
