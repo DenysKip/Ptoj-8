@@ -411,6 +411,23 @@ stroke: #ACADB9;
         font-size: 14px;
         color: #666;
     }
+    .food-pur-img {
+      max-width: 100%;
+    } 
+    .text-p {
+      color: var(--Dark-Grey, #ACADB9);
+    }
+    .image-pur{
+      margin: 15px;
+    }
+    .list-this {
+      border: 1px solid rgba(160, 174, 192, 1);
+      border-radius: 12px;
+      margin: 10px;
+    }
+    .price-purchases {
+      margin-left: 170px;
+    }
     .top-section h2 {
         font-size: 20px;
         margin: 20px 0 10px;
