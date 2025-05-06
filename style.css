@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 .container {
-margin: 30px;
+max-width: 315px;
+margin: 0 auto;
 }
 body { 
   text-decoration: none;
@@ -161,7 +162,7 @@ text-transform: capitalize;
       font-weight: 500;
       line-height: 21.6px;
     }
-    .bg{
+    .present-bg{
       background: #6C5FBC;
     }
     .title-bg {
@@ -368,7 +369,6 @@ stroke: #ACADB9;
         margin-bottom: 16px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
     .card img { 
-        width: 100%;
         border-radius: 12px; 
     }
     .label { 
