@@ -426,6 +426,7 @@ stroke: #ACADB9;
       margin: 10px;
     }
     .price-purchases {
+      margin-bottom: 20px;
       margin-left: 170px;
     }
     .top-section h2 {
@@ -454,7 +455,11 @@ stroke: #ACADB9;
         text-align: center;
         padding: 20px;
       }
+      .all-container {
+        justify-content: space-between;
+      }
       .select-pur {
+        margin-left: 87px;
         color: var(--Greyscale-900, #1A202C);
 font-size: 11.164px;
 font-weight: 600;
@@ -510,9 +515,6 @@ letter-spacing: 0.372px;
   }
   .purple-bar {
     background-color: linear-gradient(90deg, #7b61ff 60%, #e0d9ff 60%)
-  }
-  .purple {
-    color: #6e57e0;
   }
   .text-purchases {
     margin-top: 258px;
