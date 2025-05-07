@@ -437,13 +437,30 @@ stroke: #ACADB9;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
     }
+    .purchase-bar {
+      height: 8px;
+      border-radius: 4px;
+      margin-top: 6px;
+      margin-bottom: 15px;
+      margin: 15px;
+    }
+    .yellow-bar {
+      background: linear-gradient(90deg, #ffa500 50%, #ffecb3 50%);
+    }
+    .purple-bar {
+      background: linear-gradient(90deg, #7b61ff 60%, #e0d9ff 60%);
+    }
       .testimonial-container {
         text-align: center;
         padding: 20px;
       }
-  
-      .purple {
-        color: #6e57e0;
+      .select-pur {
+        color: var(--Greyscale-900, #1A202C);
+font-size: 11.164px;
+font-weight: 600;
+line-height: 150%;
+letter-spacing: 0.372px;
+        border: none;
       }
       .card {
         background: white;
