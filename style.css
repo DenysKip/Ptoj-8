@@ -284,6 +284,18 @@ width: 58.942px;
 height: 19.325px;
 flex-shrink: 0;
 }
+.title-card {
+  color: var(--BLACK, #323142);
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: Poppins;
+font-size: 15.08px;
+font-style: normal;
+font-weight: 600;
+line-height: 24.504px;
+width: 95.861px;
+height: 25.085px;
+flex-shrink: 0;
+}
 .price-dishes {
   color: var(--Grey, #8E97A6);
 font-family: Manrope;
@@ -300,7 +312,7 @@ line-height: 26.389px;
   margin-left: 27px;
 }
 .view-all {
-  background-color: #F9F9F9;;
+  background-color: #F9F9F9;
   border: none;
   margin-right: 82px;
   margin-top: 61px;
