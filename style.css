@@ -541,7 +541,31 @@ stroke: #ACADB9;
         background:;
         border: transparent;
       }
-      
+      .like-checkbox {
+        display: none;
+      }
+  
+      .like-label svg {
+        margin-bottom: 5px;
+        margin-left: 84px;
+        width: 15.359px;
+        height: 15.897px;
+        fill: white;
+        stroke: black;
+        stroke-width: 2;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+  
+      .like-checkbox:checked + .like-label svg {
+        fill: red;
+        stroke: red;
+      }
+  
+      .content-block {
+        border: none;
+        border-radius: 10px;
+      }
 
 
 
