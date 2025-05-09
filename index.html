@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <a href="./Category.html">Category</a>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
           <div class="header-logo-text">
-          <picture>
-            <Img src="Img/Logo.avif" alt="Logo">
-        </picture>
-        <h2 class="text-logo">eatly</h2>
+            <Img class="logo-header" src="Img/Logo.avif" alt="Logo">
+              <h2 class="text-logo">eatly</h2>
+              <button class="svg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="25" viewBox="0 0 34 25" fill="none">
+                <path d="M1.25 1H32.75H1.25Z" fill="#918F8F"/>
+                <path d="M1.25 1H32.75" stroke="#282828" stroke-width="2" stroke-linecap="round"/>
+                <path d="M1.25 12.1628H32.75H1.25Z" fill="#918F8F"/>
+                <path d="M1.25 12.1628H32.75" stroke="#282828" stroke-width="2" stroke-linecap="round"/>
+                <path d="M1.25 23.3257H32.75H1.25Z" fill="#918F8F"/>
+                <path d="M1.25 23.3257H32.75" stroke="#282828" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              </button>
         </div>
+        <nav class="nav">
         <ul class="nav-text">
-          <button class="btn-menu"><img src="Img/menu.svg"></button>
-            <nav class="nav">
-            <li class="menu-text"><a href="">Menu</a></li>
-            <li class="menu-text"><a href="">Blog</a></li>
-            <li class="menu-text"><a href="">Pricing</a></li>
-            <li class="menu-text"><a href="">Cotnact</a></li>
-            </nav>
+            <li class="nav-text-list">
+              <a class="menu-text-list-item" href="">Menu</a>
+            </li>
+            <li class="nav-text-list">
+              <a class="menu-text-list-item" href="">Blog</a>
+            </li>
+            <li class="nav-text-list">
+              <a class="menu-text-list-item" href="">Pricing</a>
+            </li>
+            <li class="nav-text-list">
+              <a class="menu-text-list-item" href="">Cotnact</a>
+            </li>
           </ul>
+        </nav>
         <div class="menu-btn">
           <ul class="menu-btn-header">
             <li>
@@ -37,12 +51,13 @@
           </ul>
         </div>
         </div>
+        </div>
     </header>
     <main class="hero">
     <div class="container">
         <div class="hero-text">
             <div>
-            <p class="text-users">1000 users</p>
+            <p class="text-users">over 1000 users</p>
             </div>
             <div>
                 <h1 class="hero-title"><span>Enjoy Foods Over The </span><span class="world"> World</span>
