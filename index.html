@@ -77,7 +77,7 @@
             <div class="img-hero">
           <ul class="image-hero">
             <li class="image-hero-list-trust">
-            <img src="Img/trustpilot-1 1 (1).png" alt="">
+            <img class="image-hero-list-trust-img" src="Img/trustpilot-1 1 (1).png" alt="">
             </li>
             <li class="image-hero-list-star">
             <img class="image-hero-list-star-img" src="img/Hero.avif" alt="">
@@ -278,7 +278,7 @@
                   <ul class="list-item-purchases">
                   <li class="list-this"><div class="all-container"><p><img class="image-pur" src="Img/icon.png"><span>Expense</span><br><small class="purchase-text">Increased By 10%</small></p></div>
                   <p><span class="price-purchases">$409.00</span></p><div class="purchase-bar purple-bar"></div></li>
-                    <li class="list-this"><p><img class="image-pur" src="Img/icon (1).png"><span>Voucher Usage</span><br><small class="purchase-text">Increased By 5%</small></p>
+                  <li class="list-this"><p><img class="image-pur" src="Img/icon (1).png"><span>Voucher Usage</span><br><small class="purchase-text">Increased By 5%</small></p>
                     <p><span class="price-purchases">$45.78</span></p>
                     <div class="purchase-bar yellow-bar"></div></li>
                   </ul>
@@ -305,10 +305,12 @@
                   <div class="promo-container">
                     <div class="promo-card">
                       <h2>GET 50%</h2>
-                      <form class="promo-form">
-                        <input type="email" placeholder="Email Address" required />
-                        <button type="submit" class="submit">SUBSCRIBE</button>
+                      <ul class="promo-card-form">
+                      <li><form class="promo-form">
+                        <input type="email" placeholder="Email Address" required /></li>
+                        <button class="subscribe-btn" type="submit" class="submit">SUBSCRIBE</button>
                       </form>
+                      </ul>
                     </div>
                     <div class="promo-image">
                       <img src="Img/Food Image (4).png" alt="Food Dish" />
@@ -321,32 +323,36 @@
 
 <section class="category">
 <div class="container">
-    <h1 class="banner">
+  <div class="banner">
+    <h1>
       <span class="banner-title">50% OFF</span>
       <span class="weekend">WEEKEND</span>
-      <img class="banner-img" src="Food Image (3).png" alt="Dish">
+      <img class="banner-img" src="Img/Food Image (12).png" alt="Dish">
     </h1>
+  </div>
+</div>
+  <div class="container">
+    <div class="card-category">
     <h3 class="section-title">Category</h3>
     <ul class="categories">
       <li class="category-pizza">
-        <img src="./Img/Pizza.jpg" alt="Pizza"><p class="pizza">Pizza</p></li>
+        <img class="img-category pizza-cat" src="./Img/Pizza.jpg" alt="Pizza"><p class="pizza">Pizza</p></li>
       <li class="category-asian">
-        <img class="img-category" src="Img/Hotdog.jpg" alt="Hotdog"><p class="asian">Asian</p></li>
+        <img class="img-category asian-cat" src="Img/Hotdog.jpg" alt="Hotdog"><p class="asian">Asian</p></li>
       <li class="category-donat">
-        <img src="Img/Donat.jpg" alt="Donat"><p class="donat">Donat</p></li>
+        <img class="img-category  donat-cat" src="Img/Donat.jpg" alt="Donat"><p class="donat">Donat</p></li>
       <li class="category-icecream">
-        <img src="Img/Icecream.jpg" alt="Icecream"><p class="ice">Ice</p></li>
+        <img class="img-category ice-cat" src="Img/Icecream.jpg" alt="Icecream"><p class="ice">Ice</p></li>
       </ul>
-    <h3 class="section-title">Sort By</h3>
-    <div class="sort-options">
-      <p class="popular-options">Recommended</p>
-      <p class="popular-options">Most Popular</p>
-      <p class="text">Fast Delivery</p>
-    </div>
-
-    <h3 class="section-title">Price</h3>
+    <h3 class="section-title-h">Sort By</h3>
+    <ul class="cat">
+      <li class="popular-options">Recommended</li>
+      <li class= "popular-options">Most Popular</li>
+      <li class="fast"><p>Fast Delivery</p></li>
+      </ul>
+      <h3 class="section-title-price">Price</h3>
+      <input class="section-title-bar" type="range" min="0" max="100" value="40" />
     <ul class="price-range">
-      <input type="range" min="0" max="100" value="40" />
       <li class="title-price">$0</li>
     <li class="title-price">$25</li>
     <li class="title-price">$50</li>
@@ -357,24 +363,26 @@
     <div>
 <button class="apply-btn">Apply</button> 
     </div>
+  </div>
+    </div>
+  </div>
     <div class="container">
-        <div class="search">
-            <img src="Search (2).svg" alt="Search">
-            <div class="text-search">Search</div>
-        </div>
-        <form class="promo-form">
-          <input type="email" placeholder="Search" required />
+        <div class="search-box">
+  <input type="text" placeholder="Search">
+</div>
         <div class="switch">
           <ul class="list-item-switch">
             <li>
-            <button class="active">Food</button>
+            <button class="food-btn">Food</button>
             </li>
             <li>
-            <button class="active">Restaurant</button>
+            <button class="rest-btn">Restaurant</button>
             </li>
             </ul>
         </div>
       </div>
+
+
     </section>
     <section class="our-top-dishes">
         <div class="container">
