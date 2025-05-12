@@ -40,8 +40,6 @@ font-style: normal;
 font-weight: 600;
 line-height: 130%;
     }
-    .header {
-    }
     .nav {
       display: none;
     }
@@ -604,6 +602,7 @@ stroke: #ACADB9;
         border: none;
         border-radius: 10px;
       }
+
 
 
 
@@ -1285,7 +1284,10 @@ box-shadow: 0px 9.061px 20.136px 0px rgba(211, 209, 216, 0.25);
 
 
 
-
+.h-footer {
+  margin-top: 158px;
+text-align: center;
+}
 .title-footer {
 padding: 30px;
   list-style: none;
@@ -1308,25 +1310,26 @@ height: 0.556px;
 background: #ADADAD;
 }
 .questions {
+  margin-top: 67px;
   list-style: none;
 }
-.image-footer {
-  border: transparent;
-  gap: 30px;
-  justify-content: center;
-  display: flex;
-}
 .footer-image {
+margin-left: 100px;
 }
 .footer-title {
   width: 375px;
 height: 426px;
 flex-shrink: 0;
-background: #EFEFEF;;
+background: ;
+}
+.text-footer {
+  margin-top: 5px;
+  color: #6C5FBC;
+  margin-left: 10px;
 }
 .title-footer {
-  padding: 30px;
   color: #606060;
+  padding: 30px;
 font-family: Inter;
 font-size: 14px;
 font-style: normal;
@@ -1334,10 +1337,40 @@ font-weight: 500;
 line-height: 18.884px;
 text-transform: uppercase;
 }
+.footer {
+  margin: 0 auto;
+  background-color: #ececec;
+  width: 375px;
+height: 426px;
+flex-shrink: 0;
+}
 .frequently-asked {
   justify-content: center;
   text-align: center;
 }
+.logo-footer {
+margin-top: 55px;
+  margin-top: 150px;
+  display: flex;
+}
+.toggle-button {
+  font-size: 15px;
+      width: 15.822px;
+height: 15.822px;
+      border: none;
+      border-radius: 50%;
+      background-color: #6C5FBC;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .toggle-button:hover {
+      background-color: #6C5FBC;
+    }
 .questions-1 {
   color: #7b61ff;
 }
@@ -1347,7 +1380,8 @@ height: 1px;
 background: #CBCBCB;
 }
 .text-label {
-  text-align: center;
+  margin-top: 26px;
+margin-left: 72px;
   color: #70798B;
 font-family: Inter;
 font-size: 13.541px;
@@ -1355,8 +1389,6 @@ font-style: normal;
 font-weight: 500;
 line-height: 19.914px; 
 }
-
-
 
 
 
