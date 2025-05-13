@@ -79,19 +79,29 @@ margin-left: 140px;
   border: transparent;
 }
 .image-hero {
+  margin-right: 40px;
   list-style: none;
   display: flex;
 }
-.image-hero-list-star-img {
-  display: flex;
-  margin-left: 180px;
+.image-hero-list-star {
+  margin-top: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.image-hero-list-trust {
+}
+.image-hero-list-star-text {
+  margin-top: 5px;
+  color: var(--blue-gray-700, #334155);
+font-family: "Plus Jakarta Sans";
+font-size: 12.811px;
+font-style: normal;
+font-weight: 500;
+line-height: 19.216px;
 }
 .img-hero {
   display: flex;
   justify-content: right;
-}
-.star-title {
-margin-bottom: 10px;
 }
 .food-hero {
   margin-top: 67px;
@@ -216,16 +226,23 @@ height: 648px;
       display: block;
     }
     .text-list {
-     margin-top: 37px;
+    margin-top: 37px;
     }
     .img-download {
       position: absolute;
+    }
+    .text-btn-download {
+    align-items: center;
     }
     .download-btn {
       border: transparent;
     }
     .btn-download {
+      border: none;
       text-align: center;
+    }
+    .btn-download-svg {
+
     }
     .image-btn {
       text-align: center;
@@ -266,6 +283,8 @@ background: #6C5FBC;
 
 
 
+
+
     .top-dishes {
       text-align: center;
     }
@@ -298,6 +317,57 @@ background: #6C5FBC;
     }
     .img-top {
       border-radius: 20px;
+    }
+    .button-wrapper {
+  margin-left: 70px;
+      text-align: center;
+    }
+    .add-btn {
+      width: 30px;
+      height: 30px;
+      font-size: 25px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #000;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.3s ease;
+    }
+    .add-btn:hover {
+      background-color: #333;
+    }
+    .result {
+      margin-top: 12px;
+      font-size: 24px;
+      color: #222;
+      background-color: #fff;
+      padding: 12px 0;
+      width: 60px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      border: 1px solid #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .total {
+      margin-top: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      color: #222;
+      background-color: #fff;
+      padding: 12px 0;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      border: 1px solid #ddd;
+      text-align: center;
     }
     .label-health {
       width: 28.669px;
