@@ -52,7 +52,7 @@ margin-left: 140px;
     }
 .text-users {
   font-size: 9.248px;
-  margin-top: 88px;
+
       text-align: center;
     }
     .logo-header {
@@ -87,8 +87,6 @@ margin-left: 140px;
   margin-top: 8px;
   margin-left: 10px;
   margin-right: 10px;
-}
-.image-hero-list-trust {
 }
 .image-hero-list-star-text {
   margin-top: 5px;
@@ -1080,7 +1078,7 @@ line-height: normal;
   .weekend {
     margin-top: 37px;
     margin-left: 25px;
-    color: #816dff;
+    color: #5e45ff;
 text-align: center;
 font-family: Poppins;
 font-size: 35.33px;

@@ -1,7 +1,65 @@
- function toggleSign(buttonId) {
+document.addEventListener('DOMContentLoaded', function() {
+    const addButtons = document.querySelectorAll('.add-btn');
+    const totalElement = document.getElementById('totalSum');
+    let totalItems = 0;
+    let totalPrice = 0;
+    addButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.card');
+            const priceText = card.querySelector('.price').textContent;
+            const price = parseFloat(priceText.replace('$', ''));
+            totalItems++;
+            totalPrice += price;
+            totalElement.textContent = Кількість товарів: ${totalItems} Загальна сума: $${totalPrice.toFixed(2)};
+        });
+    });
+});
+
+
+
+
+
+  document.querySelectorAll('.category').forEach(category => {
+    category.addEventListener('click', () => {
+      document.querySelectorAll('.category').forEach(cat => {
+        cat.style.opacity = "0.35";
+        cat.style.border = "none";
+      });
+      category.style.opacity = "1";
+      category.style.border = "2px solid #6C5FBC";
+    });
+  });
+  const searchInput = document.querySelector('.search-box input');
+  searchInput.addEventListener('input', () => {
+    const query = searchInput.value.toLowerCase();
+    console.log("Пошук:", query);
+  });
+  const applyBtn = document.querySelector('.apply-btn');
+  applyBtn.addEventListener('click', () => {
+    alert("Фільтри застосовано!");
+  });
+  const foodBtn = document.querySelector('.food-btn');
+  const restBtn = document.querySelector('.rest-btn');
+  foodBtn.addEventListener('click', () => {
+    foodBtn.style.background = '#6C5FBC';
+    foodBtn.style.color = 'white';
+    restBtn.style.background = '#F3F5F6';
+    restBtn.style.color = '#6C5FBC';
+  });
+  restBtn.addEventListener('click', () => {
+    restBtn.style.background = '#6C5FBC';
+    restBtn.style.color = 'white';
+    foodBtn.style.background = '#F3F5F6';
+    foodBtn.style.color = '#6C5FBC';
+  });
+
+
+
+
+function toggleSign(buttonId) {
       const btn = document.getElementById(buttonId);
       btn.addEventListener('click', () => {
-        btn.textContent = btn.textContent.trim() === '+' ? '−' : '+';
+        btn.textContent = btn.textContent.trim() === '+' ? '-' : '+';
       });
     }
     toggleSign('btn1');
@@ -13,69 +71,3 @@
 
 
 
-    let totalCount = 0;
-    let totalPrice = 0;
-    function addToTotal(btnId, resId) {
-      const button = document.getElementById(btnId);
-      const result = document.getElementById(resId);
-      button.addEventListener('click', () => {
-        let count = parseInt(result.textContent);
-        totalCount += 1;
-        totalPrice += count;
-        document.getElementById('totalSum').textContent = `Кількість товарів: ${totalCount} | Загальна сума: ${totalPrice}`;
-      });
-    }
-
-    addToTotal("DishBtn", "appleRes");
-    addToTotal("DishBtn", "bananaRes");
-    addToTotal("DishBtn", "cherryRes");
-    addToTotal("DishBtn", "dateRes");
-    addToTotal("DishBtn", "figRes");
-    addToTotal("DishBtn", "grapeRes");
-    addToTotal("DishBtn", "kiwiRes");
-    addToTotal("DishBtn", "lemonRes");
-
-
-
-
-
-
-
-
-    
-// Категорії
-const categoryButtons = document.querySelectorAll('.category-btn');
-let selectedCategory = null;
-
-categoryButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    categoryButtons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    selectedCategory = btn.dataset.category;
-  });
-});
-
-// Сортування
-const sortButtons = document.querySelectorAll('.sort-btn');
-let selectedSort = null;
-
-sortButtons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    sortButtons.forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    selectedSort = btn.dataset.sort;
-  });
-});
-
-// Ціна
-const priceSlider = document.getElementById('price-slider');
-const priceValue = document.getElementById('price-value');
-
-priceSlider.addEventListener('input', () => {
-  priceValue.textContent = $${priceSlider.value};
-});
-
-// Apply кнопка
-document.getElementById('apply-btn').addEventListener('click', () => {
-  alert(Category: ${selectedCategory  'None'}\nSort: ${selectedSort  'None'}\nPrice: $${priceSlider.value});
-});
