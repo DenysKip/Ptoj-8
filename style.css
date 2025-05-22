@@ -120,6 +120,9 @@ font-style: normal;
 font-weight: 400;
 line-height: 17.263px;
 }
+.hero {
+  padding-top: 88px;
+}
 .hero-title{
   margin-top: 5px;
   text-align: center;
@@ -153,7 +156,8 @@ font-weight: 500;
 line-height: 17.263px;
 }
 .hero-btn {
-  margin-left: 35px;
+  gap: 5px;
+justify-content: center;
 list-style: none;
 display: flex;
 padding: 15px;
@@ -198,6 +202,9 @@ text-transform: capitalize;
     .list {
       list-style: none;
     }
+    .list:not(:last-of-type) {
+      margin: 20px;
+    }
     .text-bg {
       margin-bottom: 110px;
       color: #C5BFED;
@@ -209,11 +216,10 @@ text-transform: capitalize;
       line-height: 21.6px;
     }
     .present-bg{
-height: 648px;
+      padding: 100px 0;
       background: #6C5FBC;
     }
     .title-bg {
-      margin-top: 99px;
       color: var(--base-white, #FFF);
       text-align: center;
       font-family: "Public Sans";

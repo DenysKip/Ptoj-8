@@ -34,3 +34,48 @@
     addToTotal("DishBtn", "grapeRes");
     addToTotal("DishBtn", "kiwiRes");
     addToTotal("DishBtn", "lemonRes");
+
+
+
+
+
+
+
+
+    
+// Категорії
+const categoryButtons = document.querySelectorAll('.category-btn');
+let selectedCategory = null;
+
+categoryButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    categoryButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedCategory = btn.dataset.category;
+  });
+});
+
+// Сортування
+const sortButtons = document.querySelectorAll('.sort-btn');
+let selectedSort = null;
+
+sortButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    sortButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    selectedSort = btn.dataset.sort;
+  });
+});
+
+// Ціна
+const priceSlider = document.getElementById('price-slider');
+const priceValue = document.getElementById('price-value');
+
+priceSlider.addEventListener('input', () => {
+  priceValue.textContent = $${priceSlider.value};
+});
+
+// Apply кнопка
+document.getElementById('apply-btn').addEventListener('click', () => {
+  alert(Category: ${selectedCategory  'None'}\nSort: ${selectedSort  'None'}\nPrice: $${priceSlider.value});
+});
