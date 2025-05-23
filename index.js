@@ -56,18 +56,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-function toggleSign(buttonId) {
-      const btn = document.getElementById(buttonId);
-      btn.addEventListener('click', () => {
-        btn.textContent = btn.textContent.trim() === '+' ? '-' : '+';
+
+
+
+
+ document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".toggle-button");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", () => {
+          button.textContent = button.textContent === "+" ? "-" : "+";
+        });
       });
-    }
-    toggleSign('btn1');
-    toggleSign('btn2');
-    toggleSign('btn3');
-    toggleSign('btn4');
-    toggleSign('btn5');
-
-
-
-
+    });
