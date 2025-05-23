@@ -1,19 +1,30 @@
-const addButtons = document.querySelectorAll('.add-btn1');
-    const totalElement = document.getElementById('totalSum');
-    let totalItems = 0;
-    let totalPrice = 0;
-    addButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const card = this.closest('.card');
-            const priceText = card.querySelector('.price').textContent;
-            const price = parseFloat(priceText.replace('$', ''));
-            totalItems++;
-            totalPrice += price;
-            totalElement.textContent = 'Кількість товарів: ${totalItems} Загальна сума: $${totalPrice.toFixed(2)}';
-        });
+  document.addEventListener('DOMContentLoaded', function() {
+    const cart = {
+      items: 0,
+      total: 0
+    };
+    const cartWidget = document.getElementById('cart-widget');
+    cartWidget.style.display = 'block';
+    document.querySelectorAll('.add-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const priceElement = this.closest('.card').querySelector('.price');
+        const price = parseFloat(
+          priceElement.textContent.replace('$', '') + 
+          priceElement.querySelector('.price-dishes').textContent
+        );
+        cart.items++;
+        cart.total += price;
+        document.getElementById('cart-count').textContent = cart.items;
+        document.getElementById('cart-total').textContent = cart.total.toFixed(2);
+        this.textContent = '✓';
+        this.style.background = '#4CAF50';
+        setTimeout(() => {
+          this.textContent = '+';
+          this.style.background = '';
+        }, 500);
+      });
     });
-
-
+  });
 
 
 
@@ -56,6 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
     
+
+
 
 
 
