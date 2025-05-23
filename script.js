@@ -1,4 +1,4 @@
-  document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     const cart = {
       items: 0,
       total: 0
@@ -25,6 +25,9 @@
       });
     });
   });
+
+
+
 
 
 
