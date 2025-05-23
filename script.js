@@ -66,33 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-document.addEventListener('click', function(event) {
-  const categoriesContainer = document.querySelector('.categories');
-  const allCategories = document.querySelectorAll('.categories li');
-  const allTexts = document.querySelectorAll('.categories li p');
-  const clickedOnCategory = event.target.closest('.categories li');
-  if (clickedOnCategory) {
-    allCategories.forEach(cat => cat.classList.remove('selected'));
-    allTexts.forEach(text => text.classList.remove('selected-text'));
-    clickedOnCategory.classList.add('selected');
-    clickedOnCategory.querySelector('p').classList.add('selected-text');
-  } else if (!event.target.closest('.categories')) {
-    allCategories.forEach(cat => cat.classList.remove('selected'));
-    allTexts.forEach(text => text.classList.remove('selected-text'));
-  }
-});
-document.querySelector('.apply-btn').addEventListener('click', function() {
-  document.querySelectorAll('.category').forEach(item => {
-    item.style.border = 'none';
-  });
-});
-
-
-
-
-
-
-
 
 
 
