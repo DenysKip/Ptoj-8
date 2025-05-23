@@ -352,13 +352,13 @@
     <div class="card-category">
     <h3 class="section-title">Category</h3>
     <ul class="categories">
-      <li class="category-pizza">
+      <li class="category-pizza" onclick="selectCategory(this)">
         <img class="img-category pizza-cat" src="./Img/Pizza.jpg" alt="Pizza"><p class="pizza">Pizza</p></li>
-      <li class="category-asian">
+      <li class="category-asian" onclick="selectCategory(this)">
         <img class="img-category asian-cat" src="Img/Hotdog.jpg" alt="Hotdog"><p class="asian">Asian</p></li>
-      <li class="category-donat">
+      <li class="category-donat" onclick="selectCategory(this)">
         <img class="img-category  donat-cat" src="Img/Donat.jpg" alt="Donat"><p class="donat">Donat</p></li>
-      <li class="category-icecream">
+      <li class="category-icecream" onclick="selectCategory(this)">
         <img class="img-category ice-cat" src="Img/Icecream.jpg" alt="Icecream"><p class="ice">Ice</p></li>
       </ul>
     <h3 class="section-title-h">Sort By</h3>
@@ -368,7 +368,9 @@
       <li class="fast"><p>Fast Delivery</p></li>
       </ul>
       <h3 class="section-title-price">Price</h3>
-      <input class="section-title-bar" type="range" min="0" max="100" value="10" />
+      <div class="slider-container">
+<input type="range" class="chrome-purple-slider" min="0" max="100" value="50">
+</div>
     <ul class="price-range">
       <li class="title-price">$0</li>
     <li class="title-price">$25</li>
@@ -379,6 +381,7 @@
     </ul>
     <div>
 <button class="apply-btn">Apply</button> 
+<div id="food-toast" class="food-toast-hidden">Фільтри застосовано!</div>
     </div>
   </div>
     </div>
@@ -399,7 +402,7 @@
         </div>
       </div>
 </section>
- <section class="our-top-dishes">
+<section class="our-top-dishes">
         <div class="container">
           <div class="top-restourants">
             <h2 class="top-restourants">Our Top</h2>
@@ -548,11 +551,7 @@
             </div>
         </div>
       </div>
-      
-      <script>
-    
-  </script>
         </section>
-   <script src="script.js"></script>
+  <script src="./script.js"></script>
       </body>
 </html>
