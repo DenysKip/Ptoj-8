@@ -60,12 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
- document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
       const buttons = document.querySelectorAll(".toggle-button");
-
       buttons.forEach(button => {
         button.addEventListener("click", () => {
           button.textContent = button.textContent === "+" ? "-" : "+";
         });
       });
     });
+    
